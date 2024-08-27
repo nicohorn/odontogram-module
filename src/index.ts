@@ -5,4 +5,7 @@ const app = new Hono();
 
 app.route("/", odontogramApi);
 
-export default app;
+export default {
+  port: 3001,
+  fetch: app.fetch,
+};
